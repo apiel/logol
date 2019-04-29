@@ -1,5 +1,7 @@
 # logol
 
+Simple wrapper of console.log to had some color in the terminal.
+
 ```js
 const logol = require('logol');
 
@@ -21,5 +23,7 @@ debug('test debug', { a: 123 });
 warn('test warn', { a: 123 });
 error('test error', { a: 123 });
 ```
+
+Will output:
 
 ![screenshot](https://github.com/apiel/logol/blob/master/media/logol.png?raw=true)
