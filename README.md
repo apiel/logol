@@ -22,4 +22,4 @@ warn('test warn', { a: 123 });
 error('test error', { a: 123 });
 ```
 
-![screenshot](https://github.com/apiel/run-screen/blob/master/media/logol.png?raw=true)
+![screenshot](https://github.com/apiel/logol/blob/master/media/logol.png?raw=true)
