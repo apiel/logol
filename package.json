@@ -11,6 +11,7 @@
   },
   "scripts": {
     "test": "node test.js",
+    "deno": "deno run deno_test.ts",
     "prepublish": "yarn build",
     "prebuild": "rm -rf dist/",
     "build": "tsc -p tsconfig.json",

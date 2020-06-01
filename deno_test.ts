@@ -1,5 +1,4 @@
-const logol = require('./dist');
-const test2 = require('./test2');
+import * as logol from './mod.ts';
 
 logol.info('test info', { a: 123 });
 logol.log('test log', { a: 123 });
@@ -10,5 +9,3 @@ logol.error('test error', { a: 123 });
 
 logol.logol.log = (...params) => console.log('overwrite', ...params);
 logol.log('test log', { a: 123 });
-
-test2();
