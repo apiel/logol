@@ -11,17 +11,18 @@
   },
   "scripts": {
     "test": "node test.js",
-    "deno": "deno run deno_test.ts",
+    "deno": "deno run --allow-env deno_test.ts",
     "prepublish": "yarn build",
     "prebuild": "rm -rf dist/",
     "build": "tsc -p tsconfig.json",
     "lint": "tslint -p tsconfig.json -c tslint.json"
   },
   "dependencies": {
-    "chalk": "^2.4.2",
-    "typescript": "^3.4.1"
+    "chalk": "^4.1.0",
+    "typescript": "^3.9.6"
   },
   "devDependencies": {
-    "@types/chalk": "^2.2.0"
+    "@types/chalk": "^2.2.0",
+    "@types/node": "^14.0.14"
   }
 }

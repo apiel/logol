@@ -1,6 +1,7 @@
 declare function noColor(val: string): string;
 declare let colors: {
     bold: typeof noColor;
+    magenta: typeof noColor;
     blue: typeof noColor;
     green: typeof noColor;
     gray: typeof noColor;
@@ -10,11 +11,26 @@ declare let colors: {
 };
 export declare function setColors(newColors: typeof colors): void;
 export declare const logol: {
-    info: (message?: any, ...optionalParams: any[]) => void;
-    log: (message?: any, ...optionalParams: any[]) => void;
-    debug: (message?: any, ...optionalParams: any[]) => void;
-    warn: (message?: any, ...optionalParams: any[]) => void;
-    error: (message?: any, ...optionalParams: any[]) => void;
+    info: {
+        (...data: any[]): void;
+        (message?: any, ...optionalParams: any[]): void;
+    };
+    log: {
+        (...data: any[]): void;
+        (message?: any, ...optionalParams: any[]): void;
+    };
+    debug: {
+        (...data: any[]): void;
+        (message?: any, ...optionalParams: any[]): void;
+    };
+    warn: {
+        (...data: any[]): void;
+        (message?: any, ...optionalParams: any[]): void;
+    };
+    error: {
+        (...data: any[]): void;
+        (message?: any, ...optionalParams: any[]): void;
+    };
 };
 export declare function info(...args: any): void;
 export declare function log(...args: any): void;
